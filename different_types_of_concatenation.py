@@ -19,6 +19,11 @@ if __name__ == "__main__":
     combined_string = "{} {}".format(the_first_string, the_second_string)
     print(combined_string)
 
+    # with the .join method
+    "".join([the_first_string, ' ', the_second_string])
+    # I find this the least readable format. I do not recommend this.
+    # Unless dumping a list to string, this could be useful.
 
-
-
+    # with f"{variable}"
+    combined_string = f'{the_first_string} {the_second_string}'
+    # I actually came across this while making this script and I also like this.
